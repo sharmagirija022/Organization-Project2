@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 10px;
+}
+
+/* Hero Section with background image */
+.hero-section {
+  background-image: url('background.jpg'); /* Replace with your actual image */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  max-width: 1512px;
+  height: auto;
+  aspect-ratio: 1512 / 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.hero-section h1 {
+  font-size: 2.5rem;
+  color: #660000;
+  background-color: rgba(255,255,255,0.7);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.content-section {
+  max-width: 90%;
+  margin: 20px auto;
+  font-size: 1rem;
+}
+
+/* Image Row */
+.image-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.image-container {
+  width: 100%;
+  max-width: 646px;
+  aspect-ratio: 646 / 501;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.image-container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Video Section */
+.video-section {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  max-width: 100%;
+}
+
+.video-section iframe {
+  width: 100%;
+  max-width: 1313px;
+  aspect-ratio: 1313 / 565;
+  border: none;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-section iframe:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Back Button */
+.back-button-container {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.back-button-container button {
+  padding: 10px 25px;
+  background-color: #b30000;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.back-button-container button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
